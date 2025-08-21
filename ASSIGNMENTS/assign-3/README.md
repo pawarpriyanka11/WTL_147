@@ -1,7 +1,7 @@
 # Web Technology Laboratory Assignments
 
 ## 📌 Assignment 3 – GitHub Repository Fetching App
-👉 [Click to View Assignment 3](https://pawarpriyanka11.github.io/WTL_147/ASSIGNMENTS/assign-3/)
+👉 https://pawarpriyanka11.github.io/WTL_147/ASSIGNMENTS/assign-3/
 
 ### Features
 - ✅ Uses **`fetch()` API with async/await** for modern asynchronous handling  
