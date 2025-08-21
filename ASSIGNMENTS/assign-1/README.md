@@ -9,7 +9,7 @@ You can view it live here:
 
 ### Description
 - Created a **basic webpage** using HTML,CSS.  
-- Explored the use of headings, paragraphs, lists, tables, and images.  
-- Added interactive elements for better user experience.  
+- Explored the use of headings, paragraphs, lists, and images.  
+- Added media query to make it responsive. 
 - Practiced semantic tags to structure content properly.
 
