@@ -1,5 +1,5 @@
 ## 🎨 Homework 2 – CSS Practical Tasks
-👉 [Click to View Homework 2](https://pawarpriyanka11.github.io/WTL_147/homework/homework2/)
+👉https://pawarpriyanka11.github.io/WTL_147/homework/homework2/
 
 ### CSS Practice Topics (75 tasks)
 - **Typography & Colors** → background color, fonts, text-transform, spacing, shadows  
