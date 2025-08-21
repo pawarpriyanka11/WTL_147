@@ -5,7 +5,7 @@
 This is my first assignment for **Web Technology Laboratory (WTL)**.  
 You can view it live here:
 
-👉 [Assignment 1 - Click to Open](https://pawarpriyanka11.github.io/WTL_147/ASSIGNMENTS/assign-1/)
+👉https://pawarpriyanka11.github.io/WTL_147/ASSIGNMENTS/assign-1/
 
 ### Description
 - Created a **basic webpage** using HTML,CSS.  
