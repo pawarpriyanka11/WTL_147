@@ -1,0 +1,649 @@
+* {
+    padding-bottom: 10px;
+}
+
+/* 1. Change background color of the entire page. */
+/* 2. Set font family of the whole page to Arial. */
+/*18. Set a background image on the body */
+body {
+    background-color: rgb(228, 123, 233);
+    font-family: Arial;
+    background-image: url("img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+/* 3. Make all headings (h1-h6) uppercase. */
+/* 7. Center align all headings.    */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* 4. Set the color of all links to blue.
+5. Remove underline from all links. */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+/* 6. Add underline only on hover to links.    */
+a:hover {
+    text-decoration: underline;
+}
+
+/*8. Justify text in paragraphs.  */
+p {
+    text-align: justify;
+}
+
+/* 9. Give a specific <div> a background color using its id.         */
+#item {
+    background-color: firebrick;
+}
+
+
+/* 10. Style multiple elements with same class to have padding and border. */
+/*11.Change font size of paragraphs to 18px.  */
+
+.para {
+    padding: 20px;
+    border: 2px solid black;
+    font-size: 18px;
+
+}
+
+/* 12. Make certain text bold using a class. */
+.item1::first-line {
+    font-weight: bold;
+}
+
+/*13. Italicize a quote inside <blockquote> */
+blockquote {
+    font-style: italic;
+}
+
+/*14.Use text-transform to capitalize first letter of each word*/
+/*16. Add line height to paragraphs.  */
+p {
+    text-transform: capitalize;
+    line-height: 40px;
+}
+
+/* 15. Add letter spacing to a heading */
+/* 17. Use text-shadow to give heading a shadow. */
+
+h1 {
+    letter-spacing: 20px;
+    text-shadow: 4px 4px 7px #d0d045;
+}
+
+/* 20. Make an image responsive using max-width: 100%.    */
+img {
+    max-width: 100%;
+    height: auto;
+    /* 21. border:20px solid red; */
+    border-radius: 12px;
+    /* 22. Add a box shadow to an image. */
+    box-shadow: 8px 4px 6px greenyellow;
+}
+
+.box {
+    border: 4px solid black;
+    height: 100px;
+    /* 23. Add margin around a box. */
+    margin: 5px;
+    /* 24. Add padding inside a box. */
+    padding: 5px;
+    /* 25. Use different margin on top/bottom vs left/right. */
+    margin: 90px 500px 100px 210px;
+
+}
+
+/* 27. Make a box with dashed or dotted border. */
+.box1 {
+    border: 2px dashed black;
+    margin: 5px;
+    padding: 5px;
+    /* 28. Add border-radius to round the corners. */
+    border-radius: 20px;
+    height: 200px;
+
+}
+
+/* 29. Create a card style box with padding, border and shadow */
+/* 72. Build a card component with image, title and text. */
+.card {
+    border: 2px solid black;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 9px 6px 9px pink;
+}
+
+.box {
+    .badge {
+        position: absolute;
+    }
+}
+
+/* 31. Use position: relative to offset a div from top. */
+.offset {
+    position: relative;
+    top: 20px;
+    background-color: #d0d045;
+}
+
+/* 32. Create a sticky header that stays at the top on scroll. */
+header {
+    /* position: sticky; */
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    z-index: 1000;
+    background-color: #ff6666;
+}
+/* 33. Make a footer stick to bottom using position: fixed. */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto; /* allow content to grow */
+  background-color: aquamarine;
+  
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 74. Make a responsive footer with multiple columns. */
+.col {
+  flex: 1;
+  min-width: 100px;
+  margin: 5px;
+}
+
+
+/* 34. Use z-index to overlay one box over another. */
+
+
+.b1 {
+    border: 2px solid #ff6666;
+    z-index: 1;
+}
+
+.b2 {
+    border: 2px solid #372b2b;
+    z-index: 1;
+}
+
+.b3 {
+    border: 2px solid #83d440;
+    z-index: 1;
+}
+
+/* 35. Change button background on hover. */
+button {
+    margin: 50px;
+    padding: 20px;
+    background-color: aqua;
+
+}
+
+button:hover {
+    background-color: red;
+}
+
+/* 36. Change button border on focus. */
+button:focus {
+    border: 10px solid blue;
+    outline: none;
+}
+
+
+/* 37. Remove bullets from unordered list. */
+/* 38. Style list items to display inline horizontally. */
+
+ul {
+    list-style-type: none;
+    display: inline;
+
+}
+
+
+
+
+/* 39. Create a horizontal navbar using list items. */
+.nav {
+    background-color: rgb(255, 0, 195);
+    /* width: 50%; */
+    display: flex;
+    list-style: none;
+    text-align: center;
+    /* 45. Use space-between to evenly space navbar links. */
+    justify-content: space-between;
+    height: 50px;
+
+}
+
+/* 40. Change color of nav links on hover. */
+.nav li:a:hover {
+    text-decoration: underline;
+}
+
+/* 41. Highlight current active nav link. */
+.nav li.active {
+    background-color: #4CAF50;
+    font-weight: bold;
+}
+
+/* 42. Create a row of three equal-width boxes using Flexbox. */
+.flexbox {
+    display: flex;
+    /* 44. Center a box vertically and horizontally with Flexbox */
+    align-items: center;
+/* 49. Wrap Flex items onto multiple lines. */
+  flex-wrap: wrap; 
+  /* 50. Vertically center a block with Flexbox and set fixed height. */
+   justify-content: center;   
+  align-items: center; 
+  flex-grow: 1;
+  
+
+}
+
+.flexbox .bb1 {
+      flex-grow: 1;
+    background-color: bisque;
+    width: 15%;
+    height: 100px;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* 43. Create a column of boxes using Flexbox. */
+.flexbox1 {
+    display: flex;
+    /* 44. Center a box vertically and horizontally with Flexbox */
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexbox1 .bb1 {
+    background-color: rgb(172, 118, 51);
+    width: 15%;
+    height: 100px;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* 46. Align a button to the end of container using Flexbox. */
+.btn button {
+    align-items: flex-end;
+}
+
+/* 47. Make a responsive two-column layout that turns into single column on small
+screens using Flexbox.
+ */
+
+@media(max-width:900px) {
+    .flexbox {
+        /* 70. Stack columns vertically on small screens. */
+        flex-direction: column;
+    }
+}
+
+/* 48. Reverse order of Flexbox items on mobile. */
+@media(max-width:676px) {
+    .flexbox {
+        flex-direction: column-reverse;
+
+    }
+    /* 68. Use media query to change font size on small screens */
+  
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  flex-grow: 1; 
+  padding: 20px;
+  background-color: lightblue;
+  margin: 5px;
+  text-align: center;
+  
+}
+
+/* 52. Create a 2-column grid layout with CSS Grid. */
+.container1 {
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item1 {
+  flex-grow: 1; 
+  padding: 20px;
+  background-color: lightblue;
+  margin: 5px;
+  text-align: center;
+}
+.span-two {
+  grid-column: 1 / 3;
+}
+/* 53. Build a 3x3 grid of boxes with gap.
+ */
+.container2 {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.item2 {
+  flex-grow: 1; 
+  padding: 20px;
+  background-color: rgb(64, 74, 77);
+  margin: 5px;
+  text-align: center;
+}
+
+
+
+
+/* 55. Make a grid item span two rows. */
+.container3 {
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 100px; 
+}
+
+.item3 {
+  padding: 20px;
+  background-color: lightblue;
+  margin: 5px;
+  text-align: center;
+}
+.span-two {
+  grid-row: span 2;
+}
+
+
+/* 56. Change grid layout to single column on mobile. */
+@media (max-width:676px){
+    .container2{
+        grid-template-columns:1fr ;
+    }
+    
+}
+
+/* 57. Create a linear gradient background. */
+.box-g{
+  background-image: linear-gradient(to right, #252628, #00f2fe, blue, pink,red); 
+  padding: 50px;
+}
+
+/* 58. Use background-repeat to tile an image. */
+.box-tile{
+     width: 50%;
+  height: 600px;
+  background-image: url("img.jpeg"); 
+  background-repeat: repeat; 
+}
+
+/* 59. Fix a background image so it doesn’t scroll. */
+.box-img{
+    background-image: url(img.jpeg);
+   background-attachment: fixed;
+   width: 30%;
+   height: 90%;
+}
+
+/* 60. Add smooth transition to button hover */
+#smooth-btn{
+      transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#smooth-btn:hover{
+     background-color: #ebebc1; 
+  transform: scale(1.05); 
+}
+
+/* 61. Animate a box moving left to right with keyframes. */
+.box-animate
+{
+    width: 100px;
+  height: 100px;
+  background-color: tomato;
+  position: relative;
+  animation: slideRight 2s ease-in-out infinite;
+}
+
+@keyframes slideRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%; 
+  }
+}
+
+
+/* 62. Make text fade in using animation. */
+.fade-in-text {
+  opacity: 0;                   
+  animation: fadeIn 2s ease-in forwards; 
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* 63. Create a bounce animation on hover. */
+.bounce-box:hover {
+  animation: bounce 0.4s;
+}
+
+@keyframes bounce {
+  50% { transform: translateY(-10px); }
+}
+
+
+/* 64. Rotate an icon continuously using animation. */
+.spinner {
+  font-size: 40px;
+  display: inline-block;
+  animation: rotate 2s linear infinite;
+}
+
+/* 64. Rotate an icon continuously */
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* 65. Style input fields with padding and border-radius. */
+#input-text{
+    border: 2px solid green;
+    border-radius: 5px  ;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+/* 66. Change input border on focus. */
+#input-text:focus{
+    border:10px solid blue;
+}
+
+
+/* 67. Style submit button with hover and active effects. */
+#submit:hover{
+background-color: yellow;
+}
+#submit:active{
+     background-color: red;
+}
+
+
+/* 68. Use media query to change font size on small screens */
+@media(max-width:676px)
+{
+    .font-siz{
+        font-size: 10pt;
+    }
+}
+
+/* 69. Hide sidebar on screens under 600px. */
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+
+/* 
+71. Change navbar layout to hamburger on mobile (style only). */
+/* 71. Change navbar layout to hamburger on mobile (style only) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: #333;
+  }
+
+  #menu-toggle:checked + .hamburger + .nav {
+    display: flex;
+  }
+
+  .nav li a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+  }
+}
+
+
+
+
+/* 73. Create a hero section with background image and centered text. */
+.hero{
+    background-image: url(img.jpeg);
+    mask-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+
+/* 75. Style a testimonial box with quote icon. */
+.testimonial {
+  border: 1px solid #201616;
+  padding: 15px;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.quote-icon {
+  font-size: 30px;
+  color: rgb(176, 29, 29);
+}
+
+.testimonial p {
+  margin: 10px 0;
+}
+
+.testimonial h4 {
+  text-align: right;
+  margin: 0;
+}
+
+
+
+/* 76. Create a pricing table with three columns that stacks on mobile */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  border: 3px solid #170909;
+  padding: 10px;
+}
+
+/* Stack on small screens */
+@media (max-width: 675x) {
+  table, thead, tbody, tr, td, th {
+    display: block;
+  }
+
+  /* tr {
+    margin-bottom: 15px;
+    border: 3px solid #619c22;
+  } */
+
+  th {
+    display: none;
+  }
+
+  td {
+    text-align: left;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+  }
+}
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch API Example</title>
+</head>
+<body>
+
+    <button id="btn1">Get Data</button>
+
+    <script>
+        document.getElementById("btn1").addEventListener("click", () => {
+            // fetch("getdata.php")
+            fetch("https://jsonplaceholder.typicode.com/todos")
+                .then((response) => response.json())
+                // .catch((error) => {
+                //     console.error("Fetch error:", error);
+                // })
+                .then((data) => {
+                    console.log(data);
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+        });
+
+
+
+
+
+    </script>
+
+</body>
+</html>

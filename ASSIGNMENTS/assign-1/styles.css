@@ -1,0 +1,360 @@
+/* Reset and General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: url("./img/bg.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgb(111, 241, 235) !important;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.nav-item {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+.nav-item:hover {
+  background-color: rgb(81, 173, 168) !important;
+  border-radius: 8px;
+  animation: bounce 0.5s;
+  box-shadow: 2px 3px 2px white;
+}
+.navbar .nav-link {
+  color: #03160d !important;
+  text-transform: uppercase;
+  padding: 8px 16px;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Main Section */
+.main {
+  padding-top: 80px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-content {
+  width: 40%;
+  background-color: rgb(188, 209, 240);
+  padding: 20px;
+  border-radius: 30px;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.home-content:hover {
+  background-color: azure;
+  box-shadow: 4px 4px 3px rgb(214, 103, 103);
+}
+#book-appointment a {
+  text-decoration: none;
+  color: #3819e8;
+}
+#book-appointment {
+  border: none;
+  background-color: rgb(108, 240, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+#book-appointment:hover {
+  animation: bounce 0.4s;
+  border: 2px solid #21656d;
+  background-color: #c4f4f7;
+}
+#btn-t {
+  padding: 2px;
+  margin: 2px;
+}
+
+/* About Section */
+#about {
+  padding-top: 80px;
+  min-height: 100vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* Services Section */
+#services {
+  padding: 100px 20px 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.service-list .service {
+  background-color: cadetblue;
+  padding: 40px;
+  border-radius: 8px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.service h3 {
+  color: #03160d;
+}
+.service b {
+  color: #d62d3b;
+}
+.service-list .service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Doctors Section */
+#doctors {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.container {
+  width: 22%;
+  min-width: 250px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgb(220, 231, 231);
+  box-shadow: 4px 4px 4px rgb(134, 88, 88);
+  line-height: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.container:hover {
+  transform: scale(1.03);
+}
+.container img {
+  width: 100%;
+  height: 180px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+h2 {
+  color: red;
+}
+
+/* Testimonials Section */
+#testnomials {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.testimonial {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(220, 231, 231);
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 2px chocolate;
+  box-sizing: border-box;
+}
+.quote-icon {
+  font-size: 30px;
+  color: rgb(176, 29, 29);
+}
+.testimonial p {
+  margin: 10px 0;
+}
+.testimonial h4 {
+  text-align: right;
+  margin: 0;
+}
+
+/* Appointment Section */
+#appointment {
+  padding: 100px 20px 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  line-height: 20px;
+}
+#appointment h3 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+#appointment form {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#appointment label {
+  text-align: left;
+  font-weight: bold;
+  color: #34495e;
+}
+#appointment input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+#appointment input:focus {
+  border-color: #3498db;
+  background: #eaf6ff;
+  outline: none;
+}
+#appointment button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #00b894;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#appointment button:hover {
+  background-color: #019875;
+}
+
+/* Footer */
+.footer {
+  background-color: #0d3b66;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer .social-links {
+  margin-bottom: 10px;
+}
+.footer a {
+  color: #74c0fc;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: #ffffff;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .container {
+    width: 40%;
+  }
+  .container img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-content,
+  #appointment form {
+    width: 90%;
+  }
+
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 676px) {
+  .navbar .nav-link {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .home-content {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  #book-appointment {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .container img {
+    height: 150px;
+  }
+
+  #about,
+  #doctors,
+  #testimonials,
+  #appointment {
+    padding: 50px 10px;
+  }
+
+  .testimonial {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial {
+    padding: 15px;
+  }
+
+  #appointment h3 {
+    font-size: 18px;
+  }
+
+  .footer {
+    font-size: 13px;
+    padding: 15px;
+  }
+}

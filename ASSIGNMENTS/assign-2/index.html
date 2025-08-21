@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo" id="logo">
+      <img src="https://img.icons8.com/fluency/48/todo-list.png" alt="logo"/>
+      <span>To-Do List</span>
+    </div>
+
+    <nav id="menu" aria-hidden="true">
+      <ul id="menuList">
+        <li class="menu-item active" data-category="My Day" id="myDayBtn">My Day</li>
+        <li class="menu-item" data-category="Important">Important</li>
+        <li class="menu-item" data-category="Planned">Planned</li>
+        <li class="menu-item" data-category="Assigned to Me">Assigned to me</li>
+        <li class="menu-item" data-category="Tasks">Tasks</li>
+        <li class="menu-item" data-category="Groceries">Groceries</li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0" aria-expanded="false">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h1 id="categoryTitle">My Day</h1>
+    <p id="date"></p>
+
+    <div class="my-day-card" id="focusCard">
+      <img src="https://img.icons8.com/color/96/calendar--v1.png" alt="Calendar Icon" />
+      <h2>Focus on your day</h2>
+      <p>Get things done with My Day, a list that refreshes every day.</p>
+    </div>
+
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Add a task" />
+      <select id="categorySelect">
+        <option value="My Day">🌞 My Day</option>
+        <option value="Important">⭐ Important</option>
+        <option value="Planned">📅 Planned</option>
+        <option value="Assigned to Me">🧍 Assigned to me</option>
+        <option value="Tasks">🏠 Tasks</option>
+        <option value="Groceries">🛒 Groceries</option>
+      </select>
+    </div>
+
+    <div class="task-list" id="taskList"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 To-Do App | Stay Productive 🚀
+  </footer>
+
+  <audio id="doneSound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+nesting of promise make the code complex 
+use fetch-> await and async
+
+fetch is asyn - code after it will be executed
+
+await fetch("");// dont execute code after fetch

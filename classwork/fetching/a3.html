@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-Fetch</title>
+    <style>
+       body {
+            text-align: center;
+          
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 18px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            width: 80%;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+            transition: background-color 0.2s ease;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Get Data</button>
+    <div class="result"></div>
+
+    <script>
+        let dic = document.querySelector(".result");
+        
+        // Create table and append that data in table dynamically
+        function appendData(arr) {
+            let table1 = document.createElement("table");
+            // table1.border = 1;
+
+            // Create header row
+            let row1 = document.createElement("tr");
+            let k = Object.keys(arr[0]);
+            for (let i = 0; i < k.length; i++) {
+                let cell = document.createElement("th");
+                cell.textContent = k[i];
+                row1.append(cell);
+            }
+            table1.append(row1);
+
+            // Create data rows
+            for (let obj of arr) {
+                let row = document.createElement("tr");
+                for (let key of k) {
+                    let cell = document.createElement("td");
+                    cell.textContent = obj[key];
+                    row.append(cell);
+                }
+                table1.append(row);
+            }
+
+            // Add table to body
+            dic.append(table1);
+        }
+
+        // Fetch API data
+        async function getData() {
+            let result = await fetch("https://jsonplaceholder.typicode.com/todos");
+            let p1 = await result.json();
+            appendData(p1);
+        }
+
+        // Event listener
+        document.getElementById('btn1').addEventListener("click", () => {
+            dic.innerHTML = ""; // clear old table
+            getData();
+        });
+    </script>
+</body>
+</html>

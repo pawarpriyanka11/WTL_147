@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch API Example</title>
+</head>
+<body>
+
+    <button id="btn1">Get Data</button>
+    <div id="output"></div> 
+
+    <script>
+        document.getElementById("btn1").addEventListener("click", () => {
+            fetch("https://jsonplaceholder.typicode.com/todos")
+                .then((response) => response.json())
+                .catch((error) => {
+                    console.error("Fetch error:", error);
+                })
+                .then((data) => {
+                    console.log(data); // still log to console
+                    displayTable(data); // also display in table
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+        });
+
+        function displayTable(arr) {
+            // Clear old content
+            document.getElementById("output").innerHTML = "";
+
+            let table1 = document.createElement("table");
+            table1.border = 1;
+            // table1.style.borderCollapse = "collapse";
+
+            // Create header row
+            let headerRow = document.createElement("tr");
+            let keys = Object.keys(arr[0]);
+            for (let i = 0; i < keys.length; i++) {
+                let th = document.createElement("th");
+                th.textContent = keys[i];
+                headerRow.appendChild(th);
+            }
+            table1.appendChild(headerRow);
+
+            // Create data rows
+            for (let i = 0; i < arr.length; i++) {
+                let row = document.createElement("tr");
+                for (let j = 0; j < keys.length; j++) {
+                    let td = document.createElement("td");
+                    td.textContent = arr[i][keys[j]];
+                    row.appendChild(td);
+                }
+                table1.appendChild(row);
+            }
+
+            document.getElementById("output").appendChild(table1);
+        }
+    </script>
+
+</body>
+</html>

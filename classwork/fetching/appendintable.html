@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Get Table</button>
+    <script>
+        document.getElementById("btn").addEventListener("click", () => {
+            let arr = [
+                { id: 1, name: "pri" },
+                { id: 12, name: "pri2" }
+            ];
+
+            // Create table
+            let table1 = document.createElement("table");
+            table1.border = 1;
+
+            // Create header row
+            let row1 = document.createElement("tr");
+            let k = Object.keys(arr[0]);
+            for (let i = 0; i < k.length; i++) {
+                let cell = document.createElement("th");
+                cell.textContent = k[i];
+                row1.append(cell);
+            }
+            table1.append(row1);
+
+            // Create data rows
+            for (let obj of arr) {
+                let row = document.createElement("tr");
+                for (let key of k) {
+                    let cell = document.createElement("td");
+                    cell.textContent = obj[key];
+                    row.append(cell);
+                }
+                table1.append(row);
+            }
+
+            // Add table to body
+            document.body.appendChild(table1);
+        });
+    </script>
+</body>
+</html>

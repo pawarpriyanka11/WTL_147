@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .btn101{
+      background-color: aqua;
+   }
+   .btn202{
+ background-color: blueviolet;
+   }
+ .dark-mode {
+      background-color: #1e0a35;
+      color: #ffffff;
+    }
+    .hidden{
+      display: none;
+    }
+</style>
+<body>
+
+
+    
+   <!-- task1 -->
+    <h2>1. Change the text of a paragraph using JavaScript.</h2>
+    <section>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam beatae nesciunt molestiae doloremque et. Optio est non dicta illo iste? Ullam, tenetur? Pariatur?</p>
+    </section>
+
+    <!-- task2 -->
+     <section>
+      <h2> 
+2. Update the 'src' attribute of an image when a button is clicked.
+
+      </h2>
+     <img src="jadhav.jpeg" id="i1" alt="doctorname">
+     <button id="btn1">change img</button>
+     </section>
+
+     <!-- task3 -->
+      <section>
+        <h2>
+3. Change the background color of a div when a button is clicked.
+
+        </h2>
+    <div id="div1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ipsa iusto molestiae mollitia, ducimus consequatur vitae eaque, porro doloremque explicabo temporibus sunt et laborum! Dolorum pariatur voluptatem fuga temporibus illo fugiat perferendis mollitia.</div>
+    <button id="btn2">chnage div-bg</button>
+    </section>
+
+    <!-- task4 -->
+     <h2>
+4. Toggle visibility of a div using JavaScript (show/hide).
+     </h2>
+     <section>
+     <div id="visible" style="visibility: hidden;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum animi dolore dolores totam, accusantium nisi, natus deserunt ipsa suscipit iure cupiditate porro, maxime et sapiente ratione officiis sunt blanditiis esse obcaecati! Dolorum, molestiae.
+     </div>
+     <button id="toggle-btn1">toggle-div</button>
+     </section>
+
+<!-- // task5-5. Add a new <li> item to an existing list dynamically. -->
+  <h2>
+5. Add a new <li> item to an existing list dynamically.
+
+  </h2>
+     <section>
+      <h3>This is list where items are added dynamically!</h3>
+      <ul id="list">
+         
+      </ul>
+     </section>
+
+
+
+     <!-- task6. Delete a specific HTML element using JavaScript. -->
+      <h2>
+6. Delete a specific HTML element using JavaScript.
+
+      </h2>
+      <div id="delete-div">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eos ea nulla quas cumque amet animi fuga suscipit nihil dolore explicabo quos blanditiis minus quaerat harum ipsa eum sapiente, deserunt, et dicta enim.</div>
+     
+
+
+      <!-- task-7 -->
+       <h2>
+7. Add a CSS class to a paragraph on button click.
+
+       </h2>
+       <section>
+       <button id="change-class-btn">change-class-btn</button>
+       <p class="btn101">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nam earum debitis sunt! Sed mollitia dolores illo dolore laboriosam pariatur ea expedita in? Adipisci cupiditate sed sequi fugiat laboriosam illum!
+       </p>
+       </section>
+
+
+
+       <!-- task-8 -->
+        <h2>
+8. Display the value entered in a form input inside a <div>.
+
+        </h2>
+       <section>
+  <form id="form1" action="">
+    <input type="text" placeholder="enter name: " id="i11">
+    <input type="email" placeholder="enter email: " id="i2">
+    <input type="password" placeholder="enter pass: " id="i3">
+    <button id="submit">submit</button>
+  </form>
+  <div id="form-data"></div>
+</section>
+        <br>
+         
+
+<!-- task-9 -->
+ <h2>
+9. Change the font size of text using buttons (increase/decrease).
+
+ </h2>
+ <section>
+   <div id="change-size">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus velit omnis, harum et repudiandae eaque officia ipsa iste, minima atque nihil corrupti ducimus odio voluptatem. Eius vitae est minima rerum perspiciatis consequatur minus maxime accusantium nihil, maiores nobis quas nam officia cupiditate aperiam mollitia!</div>
+   <button id="increase">increase</button>
+   <button id="decrease">decrease</button>
+ </section>
+
+
+ <!-- task-10 -->
+  <h2>
+10. Show live character count as the user types in a textarea.
+
+  </h2>
+  <section>
+   <label>type something</label>
+   <input type="text" id="input-to-count">
+   <p>count of characters is:<span id="cnt">0</span></p>
+  </section><br>
+
+  <!-- task-11 -->
+   <h2>
+11. Create a basic to-do list (add, mark done, delete items).
+
+   </h2>
+    <div class="todo-container">
+    <h3>To-Do List</h3>
+    <div class="input-section">
+      <input type="text" id="task-input" placeholder="Enter a new tasK" />
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="task-list"></ul>
+  </div><br>
+  
+  <!-- task-12 -->
+   <h2>
+12. Make an accordion that shows/hides content on header click.
+
+   </h2>
+ <section>
+  <div class="accordion-header">Click to Show/Hide Content</div>
+  <div class="accordion-content" style="visibility: visible;">This is the hidden accordion content. It will toggle on click.</div>
+</section>
+
+
+<!-- task-13 -->
+ <h2>
+13. Create an image gallery with next and previous buttons.
+
+ </h2>
+ <section>
+  <button id="btn-left">previous</button>
+  <img src="shelke.jpeg" alt="" id="img-gallery" style="width: 50%;height: 50%;">
+  <button id="btn-right">next</button>
+ </section>
+
+  <!-- task-14 -->
+   <h2>
+14. Create a dynamic table where rows can be added or removed.
+
+   </h2>
+ <section>
+     <label>Enter Name</label>
+    <input type="text" id="studentname">
+    <button id="btn19">Add</button>
+    <table border="1">
+        <tr><th>Student name</th><th>Count</th><th>Action</th></tr>
+        <tbody id="tablebody">
+            <!-- row will added here -->
+        </tbody>
+    </table>
+ </section>
+
+
+
+ <!-- task-15 -->
+  <h2>
+15. Implement a dark mode toggle using classList.toggle().
+
+  </h2>
+  <section>
+<h2>Welcome to My Website</h2>
+<p>This is a demo of dark mode toggle using <code>classList.toggle()</code>.</p>
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </section>
+
+
+<!-- task-16 -->
+ <h2>
+16. Filter a list of items as user types in a search box.
+
+ </h2>
+ <section>
+  <h3>Search Fruits</h3>
+<input type="text" id="searchBox1" placeholder="Type to search...">
+<ul id="itemList1">
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Orange</li>
+  <li>Strawberry</li>
+  <li>Pineapple</li>
+  <li>Grapes</li>
+  <li>Mango</li>
+</ul>
+ </section>
+
+ <!-- task-17 -->
+  <h2>
+17. Create a dropdown menu that shows/hides submenus.
+
+  </h2>
+  <section>
+  <ul class="menu">
+  <li>Home</li>
+  <li onclick="toggleSubmenu(this)">About
+    <ul class="submenu">
+      <li>Team</li>
+      <li>Careers</li>
+    </ul>
+  </li>
+  <li onclick="toggleSubmenu(this)">Services
+    <ul class="submenu">
+      <li>Web</li>
+      <li>App</li>
+    </ul>
+  </li>
+  <li>Contact</li>
+</ul>
+</section>
+
+
+
+
+ <!-- task-18 -->
+  <h2>
+18. Validate a form to highlight empty required fields in red.
+
+  </h2>
+  <section>
+ <form id="myForm">
+  <input required placeholder="Name"><br><br>
+  <input type="email" required placeholder="Email"><br><br>
+  <button>Submit</button>
+</form>
+</section>
+
+
+
+ <!-- task-19 -->
+  <h2>
+19. Build a simple image slideshow or carousel.
+
+  </h2>
+  <button onclick="prev()">Previous</button>
+<img id="slide" src="shelke.jpeg" width="300" height="200"><br><br>
+<button onclick="next()">Next</button>
+
+ <!-- task-20 -->
+  <h2>
+20. Use event delegation to handle click events on list items
+
+  </h2>
+  <section>
+<ul id="myListt">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ul>
+</section>
+
+
+  
+  <br><br>
+
+
+     <script>
+    //  task1
+    let pp=document.getElementById("para");
+    para.textContent="Hello, this is changed data of para";
+
+    // task2
+    let btn=document.querySelector("#btn1");
+    btn.addEventListener("click",function()
+   {
+    let img1=document.getElementById("i1");
+    img1.src="shelke.jpeg";
+   });   
+   
+   
+//    task3
+let btn22=document.querySelector("#btn2");
+btn22.addEventListener("click",function(){
+let d=document.getElementById("div1");
+d.style.backgroundColor="pink";
+});
+
+
+// task4
+let tt=document.getElementById("toggle-btn1");
+tt.addEventListener("click",function(){
+    
+   let divv=document.getElementById("visible");
+   if(divv.style.visibility=="visible")
+   {
+    divv.style.visibility="hidden";
+   }
+   else{
+    divv.style.visibility="visible";
+   }
+});
+
+
+// task5
+let list1=document.getElementById("list");
+let item1=document.createElement("li");
+item1.textContent="one";
+list1.append(item1);
+let item2=document.createElement("li");
+item2.textContent="two";
+list1.append(item2);
+let item3=document.createElement("li");
+item3.textContent="three";
+list1.append(item3);
+
+
+// task6
+let delete1=document.getElementById("delete-div");
+delete1.remove();
+
+
+// task7-7. Add a CSS class to a paragraph on button click.
+let chnageclass=document.getElementById("change-class-btn");
+chnageclass.addEventListener("click",function(){
+   let divx=document.getElementsByClassName("btn101").className="btn202";
+   divx.className="btn202";
+});
+
+
+// 8. Display the value entered in a form input inside a <div>.
+ let value = document.getElementById("form-data");
+  document.getElementById("submit").addEventListener("click", function(event) {
+    event.preventDefault(); 
+    let nm = document.getElementById("i11").value;
+    let em = document.getElementById("i2").value;
+    let ps = document.getElementById("i3").value;
+    value.innerText =" "+ nm + " " + em + " " + ps;
+  });   
+
+//   9. Change the font size of text using buttons (increase/decrease).
+let text1=document.getElementById("change-size");
+  let currentSize = 16;
+let incr=document.getElementById("increase");
+let decr=document.getElementById("decrease");
+incr.addEventListener("click",function(){
+   currentSize+=2;
+   text1.style.fontSize=currentSize+"px";
+});
+decr.addEventListener("click",function(){
+   currentSize-=2;
+   text1.style.fontSize=currentSize+"px";
+});
+
+
+
+// 10. Show live character count as the user types in a textarea.
+let take=document.getElementById("input-to-count");
+let cnt=document.getElementById("cnt");
+let countChars=0;
+take.addEventListener("input",function(){
+cnt.textContent=take.value.length;  
+});
+
+// 11. Create a basic to-do list (add, mark done, delete items).
+function addTask() {
+  let input = document.getElementById("task-input");
+  let taskText = input.value.trim();
+  if (taskText === "") return;
+  let taskList = document.getElementById("task-list");
+  let li = document.createElement("li");
+  li.innerHTML = `<span>${taskText}</span>
+    <div class="actions">
+      <button class="done-btn" onclick="this.textContent='Completed'; this.style.backgroundColor='gray'; this.disabled=true;">Done</button>
+      <button class="delete-btn" onclick="this.closest('li').remove();">Delete</button>
+    </div>`;
+  taskList.appendChild(li);
+  input.value = ""; 
+}
+
+
+// 12. Make an accordion that shows/hides content on header click.
+let btnaccordion = document.querySelector(".accordion-header");
+btnaccordion.addEventListener("click", function () {
+  let content1 = document.querySelector(".accordion-content");
+  if (content1.style.visibility === "hidden") {
+    content1.style.visibility = "visible";
+  } else {
+    content1.style.visibility = "hidden";
+  }
+});
+
+
+
+// 13. 13. Create an image gallery with next and previous buttons.
+let imgarr=["jadhav.jpeg","kothari.jpeg","shelke.jpeg","logo1.png"];
+let imgSrc=document.getElementById("img-gallery");
+ let index = 0;
+let pre=document.getElementById("btn-left");
+let nxt=document.getElementById("btn-right");
+
+nxt.addEventListener("click",function(){
+index++;
+if(index>=imgarr.length)
+{
+   index = 0;
+}
+imgSrc.src=imgarr[index];
+});
+
+pre.addEventListener("click",function()
+{
+  index--;
+  if(index<0)
+{
+  index=imgarr.length-1;
+}
+imgSrc.src=imgarr[index];
+});
+
+
+
+// 14. Create a dynamic table where rows can be added or removed.
+document.getElementById("btn19").addEventListener("click",function (){
+               let tBody=document.getElementById("tablebody")
+               let sName=document.getElementById("studentname").value;
+               let row=document.createElement("tr");
+
+               let cell=document.createElement("td");
+               cell.textContent=sName;
+               row.append(cell);
+           
+               cell=document.createElement("td");
+               cell.textContent=0;
+               cell.addEventListener("click",function(e){
+               
+                e.target.textContent=parseInt(e.target.textContent)+1;
+                
+               })
+               row.append(cell);
+              
+               cell=document.createElement("td");
+               let btn=document.createElement("button");
+               btn.textContent="Vote";
+               btn.addEventListener("click",function(e){
+               
+                e.target.parentElement.previousElementSibling.textContent=parseInt(e.target.parentElement.previousElementSibling.textContent)+1;
+               });
+               cell.append(btn);
+               row.append(cell);
+
+              tBody.append(row);
+            });
+
+
+
+
+
+
+
+
+
+
+
+//15. Implement a dark mode toggle using classList.toggle().
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
+
+
+
+// 16. Filter a list of items as user types in a search box.
+let searchBox = document.getElementById("searchBox1");
+let items = document.querySelectorAll("#itemList1 li");
+searchBox.addEventListener("input", function () {
+  let query = searchBox.value.toLowerCase();
+  items.forEach(item => {
+    let text = item.textContent.toLowerCase();
+    if (text.includes(query)) {
+      item.classList.remove("hidden");
+    } else {
+      item.classList.add("hidden");
+    }
+  });
+});
+
+
+
+
+// 17. Create a dropdown menu that shows/hides submenus.
+  function toggleSubmenu(element) {
+    const submenu = element.querySelector(".submenu");
+    submenu.classList.toggle("show");
+  }
+
+
+
+
+
+//18. Validate a form to highlight empty required fields in red.
+ myForm.onsubmit = e => {
+    e.preventDefault();
+    let ok = true;
+    for (let f of myForm.querySelectorAll('[required]')) {
+      f.style.border = f.value.trim() ? '' : (ok = false, '2px solid red');
+    }
+    alert(ok ? 'Form submitted!' : 'Please fill all fields.');
+  };
+
+
+
+
+
+//19. Build a simple image slideshow or carousel.
+ let i = 0;
+ function show() {
+    document.getElementById("slide").src = imgarr[i];
+  }
+  function next() {
+    i = (i + 1) % imgarr.length;
+    show();
+  }
+  function prev() {
+    i = (i - 1 + imgarr.length) % imgarr.length;
+    show();
+  }
+  setInterval(next, 3000); 
+
+
+
+
+
+//20. Use event delegation to handle click events on list items
+ document.getElementById('myListt').addEventListener('click', function(e) {
+    if (e.target.tagName === 'LI') {
+      alert('You clicked: ' + e.target.textContent);
+    }
+  });
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
