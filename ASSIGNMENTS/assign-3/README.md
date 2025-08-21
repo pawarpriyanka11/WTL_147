@@ -5,8 +5,8 @@
 
 ### Features
 - ✅ Uses **`fetch()` API with async/await** for modern asynchronous handling  
-- ✅ Implements **try...catch** for error handling (e.g., invalid username, network error)  
+- ✅ Implements **try...catch** for error handling
 - ✅ User can **enter a GitHub username** and see their repositories  
-- ✅ Displays **repo name, stars, and clickable links** to GitHub  
+- ✅ Displays **repo name and clickable links** to GitHub  
 - ✅ Styled with **HTML + CSS** for a clean UI  
 - ✅ Responsive design for different screen sizes  
