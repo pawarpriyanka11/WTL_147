@@ -1,5 +1,5 @@
 ## 📘 Homework 1 – DOM Manipulation Practice Tasks
-👉 [Click to View Homework 1](https://pawarpriyanka11.github.io/WTL_147/homework/homework1/)
+👉 https://pawarpriyanka11.github.io/WTL_147/homework/homework1/
 
 ### JavaScript Tasks (Practice Set)
 1. Change the text of a paragraph using JavaScript.  
