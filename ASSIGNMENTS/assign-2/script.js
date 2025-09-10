@@ -11,19 +11,19 @@
 
     let tasks = [];
 
-    // Helper: toggle menu (works for click and keyboard)
+
     function toggleMenu() {
       const isOpen = menu.classList.toggle("show");
       hamburger.classList.toggle("active", isOpen);
       hamburger.setAttribute("aria-expanded", String(isOpen));
       menu.setAttribute("aria-hidden", String(!isOpen));
-      // prevent background scroll when menu is open on small screens
+      
       if (window.matchMedia("(max-width: 768px)").matches) {
         document.body.style.overflow = isOpen ? "hidden" : "";
       }
     }
 
-    // Hamburger interactions
+   
     hamburger.addEventListener("click", toggleMenu);
     hamburger.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
@@ -32,7 +32,7 @@
       }
     });
 
-    // Close menu when resizing to desktop
+   
     window.addEventListener("resize", () => {
       if (window.innerWidth > 768) {
         menu.classList.remove("show");
@@ -43,7 +43,7 @@
       }
     });
 
-    // Navigation click
+   
     menuItems.forEach(item => {
       item.addEventListener("click", () => {
         document.querySelector(".menu-item.active").classList.remove("active");
@@ -51,14 +51,14 @@
         const category = item.getAttribute("data-category");
         categoryTitle.textContent = category;
         showTasks(category);
-        // close menu after selecting (mobile)
+       
         if (window.matchMedia("(max-width: 768px)").matches) {
           toggleMenu();
         }
       });
     });
 
-    // Add task
+   
     taskInput.addEventListener("keypress", function (e) {
       if (e.key === "Enter" && taskInput.value.trim()) {
         const text = taskInput.value.trim();
@@ -70,7 +70,7 @@
       }
     });
 
-    // Show tasks
+    
     function showTasks(category) {
       taskList.innerHTML = "";
       tasks
@@ -116,13 +116,13 @@
         });
     }
 
-    // Date
+   
     document.getElementById("date").textContent = new Date().toDateString();
 
-    // Default
+   
     showTasks("My Day");
 
-    // Logo resets to "My Day"
+   
     logo.addEventListener("click", () => {
       const active = document.querySelector(".menu-item.active");
       if (active) active.classList.remove("active");
@@ -130,4 +130,5 @@
       categoryTitle.textContent = "My Day";
       showTasks("My Day");
       if (menu.classList.contains("show")) toggleMenu();
+
     });
